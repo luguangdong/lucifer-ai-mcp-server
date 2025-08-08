@@ -13,11 +13,13 @@ spring:
         type: ASYNC
         instructions: "This server provides rest api  information tools and resources"
         sse-message-endpoint: /mcp/messages
+        sse-endpoint: /sse
         capabilities:
           tool: true
           resource: true
           prompt: true
           completion: true
+
 
 
 
