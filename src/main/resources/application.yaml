@@ -1,0 +1,37 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: lucifer-ai-mcp-server
+  main:
+    allow-bean-definition-overriding: true
+  ai:
+    mcp:
+      server:
+        name: lucifer-ai-mcp-server
+        version: 1.0.0
+        type: ASYNC
+        instructions: "This server provides rest api  information tools and resources"
+        sse-message-endpoint: /mcp/messages
+        capabilities:
+          tool: true
+          resource: true
+          prompt: true
+          completion: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
