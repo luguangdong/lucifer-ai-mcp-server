@@ -4,7 +4,7 @@ package com.lucifer.ai.mcp.server.model;
  * @author lucifer
  * @date 2025/8/8 13:40
  */
-public record Parameter(String parameteNname,
+public record Parameter(String parameterName,
                         String description,
                         boolean required,
                         String type
@@ -15,13 +15,13 @@ public record Parameter(String parameteNname,
     }
 
     public static class Builder {
-        private String parameteNname;
+        private String parameterName;
         private String description;
         private boolean required;
         private String type;
 
-        public Builder parameteNname(String parameteNname) {
-            this.parameteNname = parameteNname;
+        public Builder parameterName(String parameterName) {
+            this.parameterName = parameterName;
             return this;
         }
 
@@ -41,7 +41,7 @@ public record Parameter(String parameteNname,
         }
 
         public Parameter build() {
-            return new Parameter(parameteNname, description, required, type);
+            return new Parameter(parameterName, description, required, type);
         }
 
     }

@@ -53,7 +53,7 @@ public class JSONSchemaUtil {
         List<String> required = new ArrayList<>();
 
         for (Parameter parameter : parameters) {
-            String parameterName = parameter.parameteNname();
+            String parameterName = parameter.parameterName();
             Type parameterType = null;
             if (parameter.required()) {
                 required.add(parameterName);
