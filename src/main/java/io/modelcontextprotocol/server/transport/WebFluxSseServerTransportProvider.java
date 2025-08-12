@@ -133,7 +133,7 @@ public class WebFluxSseServerTransportProvider implements McpServerTransportProv
                     if (message instanceof McpSchema.JSONRPCRequest) {
                         String method = ((McpSchema.JSONRPCRequest) message).method();
                         if (McpSchema.METHOD_TOOLS_CALL.equals(method)) {
-                            // 工具触发消息，获取此时对应的工具信息，塞入对应的请求头姐信息
+                            // 工具触发消息，获取此时对应的工具信息，塞入对应的请求头信息
                             Map<String, String> headers = this.session2headers.get(session.getId());
 
                             LinkedHashMap<String, String> params = (LinkedHashMap<String, String>) ((McpSchema.JSONRPCRequest) message).params();
